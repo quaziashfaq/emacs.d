@@ -4,15 +4,15 @@
 
 (global-visual-line-mode 1)
 
-(setq org-agenda-files '("~/Documents/notes/gtd/inbox.org"
-                         "~/Documents/notes/gtd/gtd.org"
-                         "~/Documents/notes/gtd/tickler.org"))
+(setq org-agenda-files '("~/Documents/privatenotes/gtd/inbox.org"
+                         "~/Documents/privatenotes/gtd/gtd.org"
+                         "~/Documents/privatenotes/gtd/tickler.org"))
 
 (setq org-capture-templates '(("t" "Todo [inbox]" entry
-                               (file+headline "~/Documents/notes/gtd/inbox.org" "Tasks")
+                               (file+headline "~/Documents/privatenotes/gtd/inbox.org" "Tasks")
                                "* TODO %i%?")
                               ("T" "Tickler" entry
-                               (file+headline "~/Documents/notes/gtd/tickler.org" "Tickler")
+                               (file+headline "~/Documents/privatenotes/gtd/tickler.org" "Tickler")
                                "* %i%? \n %U")))
 
 (provide 'init-local)
