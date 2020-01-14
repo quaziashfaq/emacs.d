@@ -1,6 +1,6 @@
-;;; Local Mode
+;;; Local mode
 
-;;;(require 'init-evil)
+(require 'init-evil)
 
 (global-visual-line-mode 1)
 
@@ -15,6 +15,6 @@
                                (file+headline "~/Documents/privatenotes/gtd/tickler.org" "Tickler")
                                "* %i%? \n %U")))
 
-(provide 'init-local)
 
+(provide 'init-local)
 ;;; init-local.el ends here
