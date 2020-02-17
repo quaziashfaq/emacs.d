@@ -1,6 +1,6 @@
 ;;; Local Mode
 
-;;;(require 'init-evil)
+(require 'init-evil)
 
 (global-visual-line-mode 1)
 
@@ -14,6 +14,11 @@
                               ("T" "Tickler" entry
                                (file+headline "~/Documents/privatenotes/gtd/tickler.org" "Tickler")
                                "* %i%? \n %U")))
+
+
+(with-eval-after-load 'evil-maps
+  (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
+  (define-key evil-motion-state-map (kbd ";") 'evil-ex))
 
 (provide 'init-local)
 
