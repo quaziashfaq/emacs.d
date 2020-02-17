@@ -16,5 +16,9 @@
                                "* %i%? \n %U")))
 
 
+(with-eval-after-load 'evil-maps
+  (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
+  (define-key evil-motion-state-map (kbd ";") 'evil-ex))
+
 (provide 'init-local)
 ;;; init-local.el ends here
