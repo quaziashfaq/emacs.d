@@ -34,5 +34,8 @@
 
 (add-hook 'org-journal-after-entry-create-hook #'pc/insert-journal-template)
 
+
+(require 'init-racket)
+(require 'init-yasnippet)
 (provide 'init-local)
 ;;; init-local.el ends here
