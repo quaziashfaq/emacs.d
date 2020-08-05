@@ -35,6 +35,9 @@
 (add-hook 'org-journal-after-entry-create-hook #'pc/insert-journal-template)
 
 
+;;use larger font
+(setq default-frame-alist '((font . "Source Code Pro-14")))
+
 (require 'init-racket)
 (require 'init-yasnippet)
 (provide 'init-local)
