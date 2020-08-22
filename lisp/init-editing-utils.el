@@ -6,8 +6,7 @@
 
 (when (fboundp 'electric-pair-mode)
   (add-hook 'after-init-hook 'electric-pair-mode))
-(when (eval-when-compile (version< "24.4" emacs-version))
-  (add-hook 'after-init-hook 'electric-indent-mode))
+(add-hook 'after-init-hook 'electric-indent-mode)
 
 (maybe-require-package 'list-unicode-display)
 
@@ -308,9 +307,12 @@ With arg N, insert N newlines."
 (global-set-key (kbd "C-o") 'sanityinc/open-line-with-reindent)
 
 
-;;----------------------------------------------------------------------------
+
+;; M-^ is inconvenient, so also bind M-j
+(global-set-key (kbd "M-j") 'join-line)
+
+
 ;; Random line sorting
-;;----------------------------------------------------------------------------
 (defun sanityinc/sort-lines-random (beg end)
   "Sort lines in region from BEG to END randomly."
   (interactive "r")

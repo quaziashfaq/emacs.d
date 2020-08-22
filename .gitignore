@@ -52,3 +52,4 @@ site-lisp/package/
 /forge-database.sqlite
 /transient
 org-journal.cache
+/.lsp-session-v1
