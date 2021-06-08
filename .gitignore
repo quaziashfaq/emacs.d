@@ -53,3 +53,5 @@ site-lisp/package/
 /transient
 org-journal.cache
 /.lsp-session-v1
+/smex-items
+/eln-cache/
