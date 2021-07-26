@@ -38,7 +38,7 @@
 ;;use larger font
 (setq default-frame-alist '((font . "Source Code Pro-14")))
 
-(require 'init-racket)
-(require 'init-yasnippet)
+;;(require 'init-racket)
+;;(require 'init-yasnippet)
 (provide 'init-local)
 ;;; init-local.el ends here
