@@ -4,16 +4,16 @@
 
 (global-visual-line-mode 1)
 
-(setq org-agenda-files '("~/Documents/privatenotes/gtd/inbox.org"
-                         "~/Documents/privatenotes/gtd/gtd.org"
-                         "~/Documents/privatenotes/gtd/tickler.org"))
+;(setq org-agenda-files '("~/Documents/privatenotes/gtd/inbox.org"
+;                         "~/Documents/privatenotes/gtd/gtd.org"
+;                         "~/Documents/privatenotes/gtd/tickler.org"))
 
-(setq org-capture-templates '(("t" "Todo [inbox]" entry
-                               (file+headline "~/Documents/privatenotes/gtd/inbox.org" "Tasks")
-                               "* TODO %i%?")
-                              ("T" "Tickler" entry
-                               (file+headline "~/Documents/privatenotes/gtd/tickler.org" "Tickler")
-                               "* %i%? \n %U")))
+;(setq org-capture-templates '(("t" "Todo [inbox]" entry
+;                               (file+headline "~/Documents/privatenotes/gtd/inbox.org" "Tasks")
+;                               "* TODO %i%?")
+;                              ("T" "Tickler" entry
+;                               (file+headline "~/Documents/privatenotes/gtd/tickler.org" "Tickler")
+;                               "* %i%? \n %U")))
 
 
 (with-eval-after-load 'evil-maps
@@ -22,17 +22,17 @@
 
 (require 'init-org-journal)
 
-(defun pc/new-buffer-p ()
-  (not (file-exists-p (buffer-file-name))))
+;(defun pc/new-buffer-p ()
+;  (not (file-exists-p (buffer-file-name))))
 
-(defun pc/insert-journal-template ()
-  (let ((template-file (expand-file-name "template.org" org-directory)))
-    (when (pc/new-buffer-p)
-      (save-excursion
-        (goto-char (point-min))
-        (insert-file-contents template-file)))))
+;(defun pc/insert-journal-template ()
+;  (let ((template-file (expand-file-name "template.org" org-directory)))
+;    (when (pc/new-buffer-p)
+;      (save-excursion
+;        (goto-char (point-min))
+;       (insert-file-contents template-file)))))
 
-(add-hook 'org-journal-after-entry-create-hook #'pc/insert-journal-template)
+;(add-hook 'org-journal-after-entry-create-hook #'pc/insert-journal-template)
 
 
 ;;use larger font
