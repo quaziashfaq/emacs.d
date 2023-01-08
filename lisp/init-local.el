@@ -38,8 +38,8 @@
 ;;use larger font
 (setq default-frame-alist '((font . "Source Code Pro-14")))
 
-;(require 'init-org-roam)
-;(setq org-roam-directory (file-truename "~/Documents/privatenotes/roam"))
+(require 'init-org-roam)
+(setq org-roam-directory (file-truename "~/Documents/privatenotes/roam"))
 
 
 ;;(require 'init-racket)
