@@ -39,10 +39,16 @@
 (setq default-frame-alist '((font . "Source Code Pro-14")))
 
 (require 'init-org-roam)
-(setq org-roam-directory (file-truename "~/Documents/privatenotes/roam"))
+                                        ;(setq org-roam-directory (file-truename "~/Documents/privatenotes/roam"))
 
 
 ;;(require 'init-racket)
 ;;(require 'init-yasnippet)
+
+
+;;(global-disable-mouse-mode)
+;;(setq display-line-numbers-type 'relative)
+(menu-bar--display-line-numbers-mode-relative)
+
 (provide 'init-local)
 ;;; init-local.el ends here
