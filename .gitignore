@@ -17,6 +17,7 @@ CVS
 cookies
 /newsticker
 \#*
+/tree-sitter
 /elpa
 /elpa-*
 site-lisp/package/
@@ -60,3 +61,4 @@ org-roam.db
 .local
 =======
 /projects
+/forge-*.sqlite
