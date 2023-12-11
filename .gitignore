@@ -60,3 +60,5 @@ org-roam.db
 
 .local
 =======
+/projects
+/forge-*.sqlite
